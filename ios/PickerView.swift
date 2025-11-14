@@ -191,12 +191,11 @@ class PickerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
     let label = UILabel(frame: frame)
     label.text = options[component].items[row].label
     label.accessibilityIdentifier = options[component].items[row].testID
-    label.font = label.font.withSize(15.5)
-    if #available(iOS 14, *) {
-      // Do not modify the font color.
-    } else {
-      label.textColor = UIColor(hexString: theme.pickerItemTextColor)
-    }
+    label.font = label.font.withSize(20)
+
+    let colorHex = theme.pickerItemTextColor ?? "#346eeb"
+    label.textColor = UIColor(hexString: colorHex)
+    
     label.textAlignment = .center
     return label
   }
