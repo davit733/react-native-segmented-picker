@@ -3,7 +3,6 @@
 !README.md
 !docs/**/*
 !LICENSE
-!dist/**/*
 !ios/**/*
 !react-native.config.js
 !RNSegmentedPicker.podspec
