@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage     = package['homepage']
   s.platform     = :ios, "9.0"
 
-  s.source = { git: 'https://github.com/davit733/react-native-segmented-picker.git', branch: 'main' }
+  s.source = { git: 'https://github.com/davit733/react-native-segmented-picker.git', branch: 'master' }
 
   s.source_files  = "ios/**/*.{h,m,swift}"
 
